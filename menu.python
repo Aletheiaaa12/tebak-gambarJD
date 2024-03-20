@@ -1,0 +1,48 @@
+def main_menu():
+    print("=== Main Menu ===")
+    print("1. Mulai Permainan")
+    print("2. Pengaturan")
+    print("3. Keluar")
+
+def level_menu():
+    print("=== Pilih Level ===")
+    print("1. Level 1")
+    print("2. Level 2")
+    print("3. Level 3")
+    print("4. Kembali ke Menu Utama")
+
+def settings_menu():
+    print("=== Pengaturan ===")
+    print("1. Atur Suara")
+    print("2. Atur Grafis")
+    print("3. Kembali ke Menu Utama")
+
+def start_game(level):
+    print(f"Permainan dimulai! Level {level}")
+
+def main():
+    while True:
+        main_menu()
+        choice = input("Masukkan pilihan Anda: ")
+
+        if choice == '1':
+            level_menu()
+            level_choice = input("Pilih level: ")
+            if level_choice in ['1', '2', '3']:
+                start_game(level_choice)
+                # Di sini Anda bisa memanggil fungsi untuk memulai permainan
+            elif level_choice == '4':
+                continue
+            else:
+                print("Pilihan level tidak valid.")
+        elif choice == '2':
+            settings_menu()
+            # Di sini Anda bisa memanggil fungsi untuk menu pengaturan
+        elif choice == '3':
+            print("Terima kasih telah bermain!")
+            break
+        else:
+            print("Pilihan tidak valid. Silakan coba lagi.")
+
+if __name__ == "__main__":
+    main()

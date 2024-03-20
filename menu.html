@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff0f0;
+        }
+
+        .level-buttons {
+            margin-top: 50px;
+        }
+
+        .level-buttons a, .level-buttons button {
+            display: block;
+            width: 280px; /* Lebar tombol */
+            margin: 0 auto 30px; /* Rata tengah dan berjarak antar tombol */
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Menambahkan box-shadow ke efek hover */
+        }
+
+        .level-buttons a:hover, .level-buttons button:hover {
+            background-color: #1a1b1b;
+            transform: scale(1.1); /* Membuat tombol membesar saat dihover */
+            box-shadow: 0 0 10px #f54bca; /* Menambahkan shadow dengan warna hijau saat dihover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Level Game</h1>
+    <div class="level-buttons">
+        <!-- Menggunakan elemen <a> dengan atribut href untuk mengarahkan ke index.html -->
+        <a href="level1.html">Level 1</a>
+        <a href="stage2.html">Level 2</a>
+        <a href="level3.html">Level 3</a>
+        <a href="level4.html">Level 4</a>
+        <a href="level5.html">Level 5</a>
+    </div>
+</body>
+</html>
